@@ -1,0 +1,132 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:background="@color/grisCar"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:src="@drawable/logo_unmsm" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:textColor="@color/mateAzul"
+                    android:text="Clínica Universitaria"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/mateAzul"
+                    android:text="UNMSM"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/layout_usuario"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center">
+
+                        <EditText
+                            android:id="@+id/edittext_usuario_login"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Usuario"
+                            android:importantForAutofill="noExcludeDescendants"
+                            android:inputType="textCapWords" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/layout_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        app:passwordToggleEnabled="true">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/edittext_password_login"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Contraseña"
+                            android:importantForAutofill="noExcludeDescendants"
+                            android:inputType="textPassword" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/checkbox_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/mateAzul"
+                    android:onClick="onClick"
+                    android:text="Recordar contraseña" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/button_ingresar_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorBlanco"
+                    android:backgroundTint="@color/mateAzul"
+                    android:text="Ingresar" />
+
+                <TextView
+                    android:id="@+id/text_cuenta_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:clickable="true"
+                    android:textSize="15sp"
+                    android:textColor="@color/mateAzul"
+                    android:text="Crear una cuenta"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusable="true"
+    android:background="@color/colorBlanco"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include_toolbar_base"
+        layout="@layout/activity_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/text_celular_register"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:ems="10"
+                android:hint="Número celular"
+                android:paddingLeft="20dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_border_edittext"
+                android:gravity="left|center" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/text_correo_register"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:ems="10"
+                android:hint="Correo electrónico"
+                android:paddingLeft="20dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_border_edittext"
+                android:gravity="left|center" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/text_num_emergencia_register"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:ems="10"
+                android:hint="Número emergencia"
+                android:paddingLeft="20dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_border_edittext"
+                android:gravity="left|center" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/text_nom_emergencia_register"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:ems="10"
+                android:hint="Contacto de emergencia"
+                android:paddingLeft="20dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_border_edittext"
+                android:gravity="left|center" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/text_enfermedad_register"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:ems="10"
+                android:hint="Alergias"
+                android:paddingLeft="20dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_border_edittext"
+                android:gravity="left|center" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/text_clave_register"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:ems="10"
+                android:hint="Constraseña"
+                android:paddingLeft="20dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_border_edittext"
+                android:gravity="left|center" >
+            </EditText>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/button_guardar_register"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_gravity="center|bottom"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/colorBlanco"
+                android:backgroundTint="@color/mateAzul"
+                android:text="Registrar" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
